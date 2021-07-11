@@ -97,6 +97,11 @@ export default class OrderContainer extends Component {
           <button className="button default" onClick={this.handleChangeOrder}>
             Change order
           </button>
+          <form>
+            <label for="fname">Your name:</label><br/>
+            <input type="text" id="fname" name="fname"/><br/>
+            <input className="button default" type="submit" value="Submit your order!"/>
+          </form>
         </div>
       )
     } else {

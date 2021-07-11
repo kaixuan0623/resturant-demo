@@ -25,8 +25,12 @@ export default class App extends Component {
     return (
       <main className="app">
         <h1 className="title">
-          {this.state.summary ? "Your order: " : "Welcome to Bryan's Restaurant! Here is the Menu, enjoy!"}
+          {this.state.summary ? "Your order: " : "大家好，我是Bryan, Welcome to Bryan's Restaurant!"}
         </h1>
+        <h2 className="title">
+        {this.state.summary ? "" : "Here is the Menu, enjoy!"}
+
+        </h2>
         <Steps
           {...this.state}
           changeCourse={this.handleCourse}
