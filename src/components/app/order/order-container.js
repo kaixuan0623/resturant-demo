@@ -99,7 +99,7 @@ export default class OrderContainer extends Component {
           </button>
           <form>
             <label for="fname">Your name:</label><br/>
-            <input type="text" id="fname" name="fname"/><br/>
+            <input type="text" id="username" name="username"/><br/>
             <input className="button default" type="submit" value="Submit your order!"/>
           </form>
         </div>
