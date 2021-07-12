@@ -2,7 +2,7 @@ const courses = [
   "Hors d'oeuvres 开胃小菜",
   "Soup",
   "Fish",
-  "Salad",
+  "Vegetable",
   "Main Course",
   "Dessert"
 ]
