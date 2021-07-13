@@ -19,7 +19,7 @@ export default class usersContainer extends Component {
   }
 
   fetchData = () => {
-    let { selectedItems } = this.state
+    // let { selectedItems } = this.state
     const userOrderItems = require("../../../assets/data/users.json")
 
     this.setState({

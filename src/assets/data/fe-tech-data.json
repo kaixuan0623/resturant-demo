@@ -69,7 +69,7 @@
         "id": 12,
         "title": "CHINESE BRAISED FISH (HONG SHAO YU) 红烧鲈鱼",
         "image": "https://thewoksoflife.com/wp-content/uploads/2015/02/chinese-braised-fish-10.jpg",
-        "description": "A Chinese New Year is not a New Year without fish, and you MUST have two of them: one for New Year’s Eve and one for Chinese New Year’s Day. That’s why, on the eve of Chinese New Year, we’re posting this Chinese Braised Fish (red cooked fish), or hong shao yu recipe for all of you! You have a multitude of fish dishes to choose from including our Cantonese whole steamed fish but this red cooked braised dish is certainly a winner. 红烧也是不错的。",
+        "description": "A Chinese New Year is not a New Year without fish, and you MUST have two of them: one for New Year’s Eve and one for Chinese New Year’s Day. That’s why, on the eve of Chinese New Year, we’re posting this Chinese Braised Fish (red cooked fish), or hong shao yu recipe for all of you!. 红烧也是不错的。",
         "allery": ["fish"],
         "spiceLevel": 0
     },
@@ -138,7 +138,7 @@
         "id": 25,
         "title": "Choco pie",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Chocolate_Pie.jpg",
-        "description": "A choco pie is a snack cake consisting of two small round layers of cake with marshmallow filling and a chocolate covering. The term originated in America but is now also used widely in South Korea, Japan, and its exports, and many other countries as either a brand name or a generic term. Names for similar confections in other places include chocolate marshmallow pie,[1] Wagon Wheels, the Japanese angel pie,[2] Jos Louis, and moon pie.",
+        "description": "A choco pie is a snack cake consisting of two small round layers of cake with marshmallow filling and a chocolate covering. The term originated in America but is now also used widely in South Korea, Japan, and its exports, and many other countries as either a brand name or a generic term. Names for similar confections in other places include chocolate marshmallow pie.",
         "allery": ["milk", "egg"],
         "spiceLevel": 0
     }

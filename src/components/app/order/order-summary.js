@@ -18,6 +18,13 @@ export default class OrderSummary extends Component {
             courseItems={courseItems}
           />
         )
+      } else {
+        return (<OrderSummaryView
+                  key={item}
+                  courseTitle={getCourseName(item)}
+                  courseItems={['']}
+                  />
+                )
       }
     })
   }
