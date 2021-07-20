@@ -4,13 +4,15 @@ import getItemIndex from "../../../utils/itemIndex"
 import OrderView from "./order-view"
 import OrderSummary from "./order-summary"
 import Grid from "@material-ui/core/Grid"
+import { useHistory } from "react-router-dom";
 
 export default class OrderContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
       courseItems: [],
-      selectedItems: {}
+      selectedItems: {},
+      username: ""
     }
   }
 
@@ -89,6 +91,32 @@ export default class OrderContainer extends Component {
     this.props.summaryHandler()
   }
 
+  handleSubmit = async (e) => {
+    // TODO: figure out a better way to redirect to /usersummary once POST request succeed
+    e.preventDefault();  // remove this after adding a POST request
+    const titles = ["Hors d oeuvres", "Soup", "Fish", "Vegetable", "Main Course", "Dessert"];
+    let doc = {
+      name: this.state.username,
+    }
+
+    for (let i = 0; i < titles.length; i++) {
+      if (this.state.selectedItems[i].length > 0) {
+        doc[titles[i]] = this.state.selectedItems[i][0]["title"];
+      } else {
+        doc[titles[i]] = "";
+      }
+    }
+
+    // make a POST request to an endpoint from say JSON server
+    await fetch("http://localhost:3001/orders", {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(doc)
+    })
+    // window.location.replace("http://localhost:3000/usersummary");
+    window.location.replace(window.location.protocol + '//' + window.location.host + "/usersummary");
+  }
+
   render() {
     if (this.props.summary) {
       return (
@@ -97,10 +125,15 @@ export default class OrderContainer extends Component {
           <button className="button default" onClick={this.handleChangeOrder}>
             Change order
           </button>
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <label for="fname">Your name:</label><br/>
-            <input type="text" id="username" name="username"/><br/>
-            <input className="button default" type="submit" value="Submit your order!"/>
+            <input type="text" id="username" name="username"
+                   onChange={(e) => this.setState({ username: e.target.value })}
+            />
+            <br/>
+            {/*The following two are both vaild submit button*/}
+            {/*<input className="button default" type="submit" value="Submit your order!"/>*/}
+            <button className="button default">Submit your order!</button>
           </form>
         </div>
       )

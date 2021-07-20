@@ -1,0 +1,32 @@
+{
+  "orders": [
+    {
+      "name": "Bob",
+      "Hors d oeuvres": "Orange",
+      "Soup": "Corn carrot pork bone soup 玉米胡萝卜排骨老火靓汤",
+      "Fish": "CANTONESE STEAMED FISH 清蒸鲈鱼",
+      "Vegetable": "",
+      "Main Course": "Rice",
+      "Dessert": "",
+      "id": 1
+    },
+    {
+      "name": "Bill",
+      "Hors d oeuvres": "Orange",
+      "Soup": "Corn carrot pork bone soup 玉米胡萝卜排骨老火靓汤",
+      "Fish": "",
+      "Vegetable": "蚝油生菜",
+      "Main Course": "Spaghetti",
+      "Dessert": "",
+      "id": 2
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "Do you prefer Vue or React?",
+      "answerA": "Vue",
+      "answerB": "React"
+    }
+  ]
+}

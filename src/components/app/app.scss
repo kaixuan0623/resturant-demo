@@ -102,3 +102,23 @@ body {
     }
   }
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  padding: 10px;
+  transition: all 0.15s ease-in;
+  border-radius: 2px;
+  ¨ &:hover {
+    color: $secondary-color;
+    background: transparent;
+  }
+  text-decoration: none;
+}
+
+.navbar .links {
+  margin-left: auto;
+}

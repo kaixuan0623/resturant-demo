@@ -28,28 +28,35 @@ export default class usersContainer extends Component {
     console.log('Input JSON');
     console.log(userOrderItems);
   }
-
   render() {
     return (
-      <div>
-      <button className={`button default ${this.props.userorders ? "" : "-hide"}`} onClick={this.props.handleShowOrders}>
-        Hide all orders
-      </button>
-      <button className={`button default ${this.props.userorders ? "-hide" : ""}`} onClick={this.props.handleShowOrders}>
-        Show all orders
-      </button>
-        <ul className={`${this.props.userorders ? "" : "-hide"}`}>
-          {this.state.userOrderItems.map(data => (
-            <li>
-              {
-              data.name + ": " + data["Hors d oeuvres"] +  ", " +
-              data["Soup"] +  ", " + data["Fish"] +  ", " +
-              data["Vegetable"] +  ", " + data["Main Course"] + ", " + data.Dessert
-              }
-            </li>
-          ))}
-        </ul>
-      </div>
+        <div>
+
+        </div>
     )
   }
+
+  // render() {
+  //   return (
+  //     <div>
+  //     <button className={`button default ${this.props.userorders ? "" : "-hide"}`} onClick={this.props.handleShowOrders}>
+  //       Hide all orders
+  //     </button>
+  //     <button className={`button default ${this.props.userorders ? "-hide" : ""}`} onClick={this.props.handleShowOrders}>
+  //       Show all orders
+  //     </button>
+  //       <ul className={`${this.props.userorders ? "" : "-hide"}`}>
+  //         {this.state.userOrderItems.map(data => (
+  //           <li>
+  //             {
+  //             data.name + ": " + data["Hors d oeuvres"] +  ", " +
+  //             data["Soup"] +  ", " + data["Fish"] +  ", " +
+  //             data["Vegetable"] +  ", " + data["Main Course"] + ", " + data.Dessert
+  //             }
+  //           </li>
+  //         ))}
+  //       </ul>
+  //     </div>
+  //   )
+  // }
 }
